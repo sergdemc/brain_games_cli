@@ -1,1 +1,6 @@
 .venv
+.DS_Store
+.idea/
+.python-version
+brain_games/__pycache__/
+brain_games/scripts/__pycache__/
