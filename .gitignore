@@ -4,4 +4,5 @@
 .python-version
 brain_games/__pycache__/
 brain_games/scripts/__pycache__/
-brain_even_demo
+brain-games-demo
+__pycache__
