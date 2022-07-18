@@ -18,6 +18,7 @@ def get_answer():
 
 
 def generate_progression() -> list:
+    """Generate arithmetic progression and return it in list"""
     start_progression = random.randint(0, 20)
     step_progression = random.randint(2, 20)
     len_progression = random.randint(8, 12)

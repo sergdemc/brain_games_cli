@@ -17,6 +17,7 @@ def get_answer():
 
 
 def get_right_answer(num1: int, num2: int, operator) -> int:
+    """Return sum or subtraction or multiplication of two numbers."""
     if operator == '+':
         return num1 + num2
     elif operator == '-':

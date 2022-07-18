@@ -1,7 +1,8 @@
 import prompt
 
 
-def greet_user():
+def greet_user() -> str:
+    """Print invite to Brain Games, ask username, return username"""
     print("Welcome to the Brain Games!")
     username = prompt.string('May I have your name? ')
     print(f"Hello, {username}!")
@@ -9,6 +10,11 @@ def greet_user():
 
 
 def run_game(get_question, get_answer):
+    """Run common logic of games;
+    Run greeting func;
+    Run check func for user_answer;
+    Print messages to user.
+    """
     username = greet_user()
     count = 0
     while count != 3:
@@ -27,6 +33,7 @@ Correct answer was '{right_answer}'.")
 
 
 def check_answer(right_answer, user_answer) -> bool:
+    """Return True if right_answer == user_answer, otherwise return False"""
     if str(user_answer) == str(right_answer):
         return True
     else:

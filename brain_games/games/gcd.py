@@ -16,6 +16,7 @@ def get_answer():
 
 
 def get_right_answer(num1: int, num2: int) -> int:
+    """Return greatest common divisor type int"""
     if num2 == 0:
         return num1
     return get_right_answer(num2, num1 % num2)
