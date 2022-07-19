@@ -11,7 +11,7 @@ def get_answer():
     missing_index = random.randint(0, len(progression) - 1)
     missing_num = progression[missing_index]
     progression[missing_index] = '..'
-    print('Question: ', *progression)
+    print('Question:', *progression)
     user_answer = prompt.string('Your answer: ')
     right_answer = missing_num
     return right_answer, user_answer

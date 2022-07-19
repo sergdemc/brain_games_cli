@@ -9,7 +9,7 @@ def get_question():
 def get_answer():
     num1 = random.randint(0, 100)
     num2 = random.randint(0, 100)
-    print('Question: ', num1, num2)
+    print('Question:', num1, num2)
     user_answer = prompt.string('Your answer: ')
     right_answer = get_right_answer(num1, num2)
     return right_answer, user_answer

@@ -8,7 +8,7 @@ def get_question():
 
 def get_answer():
     number = random.randint(1, 100)
-    print('Question: ', number)
+    print('Question:', number)
     user_answer = prompt.string('Your answer: ')
     right_answer = get_right_answer(number)
     return right_answer, user_answer

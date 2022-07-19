@@ -8,7 +8,7 @@ def get_question():
 
 def get_answer():
     n = random.randint(0, 1000)
-    print('Question: ', n)
+    print('Question:', n)
     user_answer = prompt.string('Your answer: ').lower()
     right_answer = is_even(n)
     return right_answer, user_answer
