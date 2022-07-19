@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "console game"
 authors = ["Sergei Demchenko <hb13718@gmail.com>"]
+repository = "https://github.com/sergdemc/python-project-lvl1.git"
 packages = [
   { include = "brain_games" },
 ]
