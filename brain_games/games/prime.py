@@ -1,26 +1,22 @@
 import random
-import prompt
-
-
-def get_question():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def get_answer():
+    """Run brain-prime game:
+        return game question and right answer."""
     number = random.randint(1, 100)
-    print('Question:', number)
-    user_answer = prompt.string('Your answer: ')
-    right_answer = get_right_answer(number)
-    return right_answer, user_answer
-
-
-def get_right_answer(number: int) -> str:
-    """Returns 'yes', if `number` is prime, otherwise returns 'no'"""
+    question = (
+        'Answer "yes" if given number is prime. Otherwise answer "no".',
+        ('Question:', number)
+    )
     if number % 2 == 0 and number != 2 or number < 2:
-        return 'no'
+        right_answer = 'no'
+        return question, right_answer
     divisor = 3
     while divisor ** 2 <= number:
         if number % divisor == 0:
-            return 'no'
+            right_answer = 'no'
+            return question, right_answer
         divisor += 2
-    return 'yes'
+    right_answer = 'yes'
+    return question, right_answer
