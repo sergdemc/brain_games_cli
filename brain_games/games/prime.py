@@ -1,22 +1,23 @@
 import random
 
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def get_answer():
+
+def generate_game():
     """Run brain-prime game:
         return game question and right answer."""
     number = random.randint(1, 100)
-    question = (
-        'Answer "yes" if given number is prime. Otherwise answer "no".',
-        ('Question:', number)
-    )
+    question = ('Question:', number)
+    right_answer = is_prime(number)
+    return question, right_answer
+
+
+def is_prime(number: int) -> str:
     if number % 2 == 0 and number != 2 or number < 2:
-        right_answer = 'no'
-        return question, right_answer
+        return 'no'
     divisor = 3
     while divisor ** 2 <= number:
         if number % divisor == 0:
-            right_answer = 'no'
-            return question, right_answer
+            return 'no'
         divisor += 2
-    right_answer = 'yes'
-    return question, right_answer
+    return 'yes'

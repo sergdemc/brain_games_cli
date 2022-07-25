@@ -16,6 +16,14 @@ This project was built using these tools:
 
 ---
 
+[![asciicast](https://asciinema.org/a/dQNPeD91Xyk2gKdHWtqGPoSFj.svg)](https://asciinema.org/a/dQNPeD91Xyk2gKdHWtqGPoSFj)
 
-[![asciicast](https://asciinema.org/a/xDkbig8onxRKIefcxqQv5Kwgj.svg)](https://asciinema.org/a/xDkbig8onxRKIefcxqQv5Kwgj)
+[![asciicast](https://asciinema.org/a/r4ip7CrW1gM5LiqvgBYT0jb0r.svg)](https://asciinema.org/a/r4ip7CrW1gM5LiqvgBYT0jb0r)
 
+[![asciicast](https://asciinema.org/a/mmqiGrg8IfksjtwxHGIoCHjLZ.svg)](https://asciinema.org/a/mmqiGrg8IfksjtwxHGIoCHjLZ)
+
+[![asciicast](https://asciinema.org/a/O4O2vglV9c6G3QdKXfZ7M8VUe.svg)](https://asciinema.org/a/O4O2vglV9c6G3QdKXfZ7M8VUe)
+
+[![asciicast](https://asciinema.org/a/z6cNqp8x8miTMjoerDd5hbkEB.svg)](https://asciinema.org/a/z6cNqp8x8miTMjoerDd5hbkEB)
+
+[![asciicast](https://asciinema.org/a/Qb1G4FhQxaY0yiYiq5EwmBVIc.svg)](https://asciinema.org/a/Qb1G4FhQxaY0yiYiq5EwmBVIc)

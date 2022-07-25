@@ -1,7 +1,7 @@
 import prompt
 
 
-def run_game(get_answer):
+def run_game(game):
     """
     Run common logic of games:
     greet user, check user_answer, print messages to user.
@@ -10,11 +10,10 @@ def run_game(get_answer):
     username = prompt.string('May I have your name? ')
     print(f"Hello, {username}!")
     COUNT_OF_ROUNDS = 3
+    print(game.DESCRIPTION)
     for game_round in range(COUNT_OF_ROUNDS):
-        question, right_answer = get_answer()
-        if game_round == 0:
-            print(question[0])
-        print(*question[1])
+        question, right_answer = game.generate_game()
+        print(*question)
         user_answer = prompt.string('Your answer: ').lower()
         if str(right_answer) == user_answer:
             print('Correct!')

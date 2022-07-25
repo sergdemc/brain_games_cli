@@ -1,16 +1,15 @@
 import random
 
+DESCRIPTION = 'What is the result of the expression?'
 
-def get_answer():
+
+def generate_game():
     """Run brain-calc game:
             return game question and right answer."""
     num1 = random.randint(0, 100)
     num2 = random.randint(0, 100)
     operator = random.choice(('+', '-', '*'))
-    question = (
-        'What is the result of the expression?',
-        ('Question:', num1, operator, num2)
-    )
+    question = ('Question:', num1, operator, num2)
     if operator == '+':
         right_answer = num1 + num2
     elif operator == '-':

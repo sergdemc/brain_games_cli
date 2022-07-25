@@ -1,7 +1,9 @@
 import random
 
+DESCRIPTION = 'What number is missing in the progression?'
 
-def get_answer():
+
+def generate_game():
     """Run brain-progression game:
             return game question and right answer."""
     start_progression = random.randint(0, 20)
@@ -13,8 +15,5 @@ def get_answer():
     missing_index = random.randint(0, len(progression) - 1)
     right_answer = progression[missing_index]
     progression[missing_index] = '..'
-    question = (
-        'What number is missing in the progression?',
-        ('Question:', *progression)
-    )
+    question = ('Question:', *progression)
     return question, right_answer

@@ -1,14 +1,13 @@
 import random
 
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-def get_answer():
+
+def generate_game():
     """Run brain-even game:
             return game question and right answer."""
     n = random.randint(0, 1000)
-    question = (
-        'Answer "yes" if the number is even, otherwise answer "no".',
-        ('Question:', n)
-    )
+    question = ('Question:', n)
     if n % 2 == 0:
         right_answer = 'yes'
     else:
